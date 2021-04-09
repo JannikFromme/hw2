@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Bayern | Shop</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <!-- Header -->
+        <!-- Logo -->
+        <img src="Images/Logo.png" class="w-8 absolute inset-y-2 right-6">
+        <!-- Horizontal line -->
+        <hr class="border-0 bg-gray-500 text-gray-500 h-px mt-12 mb-1 mx-2">
+        <!-- Links to subpages -->
+        <div class= "text-xl text-center text-black font-bold ml-4 space-x-3">
+            <a class="underline" href="index.html">Home</a> 
+            <a class="underline" href="history.html">History</a> 
+            <a class="underline" href="team.html">Team</a> 
+            <a class="underline" href="shop.html">Shop</a>
+        </div>
+        <!-- Horizontal line -->
+        <hr class="border-0 bg-gray-500 text-gray-500 h-px my-1 mx-2">
+    <!-- Contents -->
+    <div class="text-center text-2xl font-bold mt-8">Discover our Exclusive Merchandise</div>
+    <div class="text-center text-base mb-8"> (Order Form below)</div>
+    <!-- Reference to subpages -->
+    <div class="bg-gray-100" >
+        <div class= "md:flex items-right mx-auto font-bold text-center">
+            <div class="md:w-1/3 px-16 pt-8">
+                <img class="mx-auto rounded-2xl border-2" src="Images/Jersey.jpg">
+                <div class="pt-4">Jersey</div>
+                <div class="pb-4 font-normal">($89.99)</div>
+            </div>
+            <div class="md:w-1/3 px-16 pt-8">
+                <img class="mx-auto rounded-2xl border-2" src="Images/Shorts.jpg">
+                <div class="pt-4">Shorts</div>
+                <div class="pb-4 font-normal">($39.99)</div>
+            </div>
+            <div class="md:w-1/3 px-16 pt-8">
+                <img class="mx-auto rounded-2xl border-2" src="Images/jacket.jpg">
+                <div class="pt-4">Jacket</div>
+                <div class="pb-4 font-normal">($109.99)</div>
+            </div>           
+    <!-- Order Form -->
+    <div class="py-4 items-center bg-gray-100">
+        <div class="container mx-auto">
+            <div class="max-w-md mx-auto my-10 bg-white p-5">
+                <h1 class=" text-center my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">Order Form</h1>
+                <div class="m-7">
+                    <form action="https://api.web3forms.com/submit">
+    
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-sm text-gray-600">Full Name</label>
+                            <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2 text-sm text-gray-600">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="email@address.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="item" class="block mb-2 text-sm text-gray-600">Item</label>
+                            <input type="text" name="item" id="item" placeholder="Jersey/Shorts/Jacket" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md" />
+                        </div>
+                        <div class="mb-6">
+                            <label for="size" class="block mb-2 text-sm text-gray-600">Size (S to XXL)</label>
+                            <input type="text" name="size" id="size" placeholder="XL" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md" />
+                        </div>
+                        <div class="pb-6">
+                            <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
